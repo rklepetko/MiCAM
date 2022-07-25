@@ -1,7 +1,8 @@
 # MiCAM Generator for Convolutional Neural Networks (CNN)
 
 This folder contains research level code for the MiCAM visualization engine.
-It contains 6 files:
+It contains 10 files:
+- README.md
 - MNIST_to_tfrec.py
 - model_vis.py
 - vis_utils.py
@@ -12,11 +13,14 @@ It contains 6 files:
 - res18.py
 - run.sh
 
+## README.md
+This documentation file.
+
 ## MNIST_to_tfrec.py
 This is a sample code that takes the MNIST dats and converts them into tensorflow records (TFRecords) for the CNN model.
 
 ## model_vis.py
-This is the main module that builds and trains the CNN model, generates the CAM images, it uses the TFRecords as a source.
+This is the main module that builds and trains the CNN model and generates the CAM images.
 
 ## vis_utils.py
 This modified python module integrates the CAM images into the model layout diagram generator.
