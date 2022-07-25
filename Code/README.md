@@ -20,7 +20,7 @@ This documentation file.
 This is a sample code that takes the MNIST data, upsamples and converts them into tensorflow records (TFRecords) for the CNN model.
 
 ## model_vis.py
-This is the main module that builds and trains the CNN model and generates the CAM images.
+This is the main module that builds and trains the CNN model and generates the CAM images.  The CNN model is specified within the input/flag parameters, and can be either defined within the code, such as the ResNet and the NeNet5 versions included, or a predefined model that is included within the Tensorflow Keras Application module.
 
 ## vis_utils.py
 This modified python tensorflow module  that integrates the CAM images into the model layout diagram generator.
