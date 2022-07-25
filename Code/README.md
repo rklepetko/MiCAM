@@ -20,13 +20,13 @@ This documentation file.
 This is a sample code that takes the MNIST data, upsamples and converts them into tensorflow records (TFRecords) for the CNN model.
 
 ## model_vis.py
-This is the main module that builds and trains the CNN model and generates the CAM images.  The CNN model is specified within the input/flag parameters, and can be either defined within the code, such as the ResNet and the NeNet5 versions included, or a predefined model that is included within the Tensorflow Keras Application module.
+This is the main module that builds and trains the CNN model and generates the CAM images.  The CNN model is specified within the input/flag parameters, and can be either defined within the code, such as the ResNet-18 and the NeNet-5 versions included, or a predefined model that is included within the Tensorflow Keras Application module.
 
 ## vis_utils.py
 This modified python tensorflow module  that integrates the CAM images into the model layout diagram generator.
 
 ## input.py
-The input module is responsible for fetching data to be used by the cnn model.  It uses tensorflow record files as the data source and returns 3 datasets:  train (60% of files), validate (20% of files) and test (20% of files) datasets.
+The input module is responsible for fetching data to be used by the CNN model.  It uses TFRecord files as the data source and returns 3 datasets:  train (60% of files), validate (20% of files) and test (20% of files) datasets.
 
 ## flags.py
 This file contains the flags/arguments needed to run the cnn_model.py
@@ -35,10 +35,10 @@ This file contains the flags/arguments needed to run the cnn_model.py
 The evaluation module creates evaluate metrics operations.  First it calculates true positive, true negative, false positive and false negative.  Then they are used to calculate precision, recall, accuracy and f1 score.  Note/Heads-up: to avoid division by zero (NaN results), 1e-10 value is added to denominators.
 
 ## lenet5.py
-This file defines a similar setup of "LeNet5" model.
+This file defines a similar setup of "LeNet-5" model.
 
 ## res18.py
-This file defines a similar setup of "ResNet18" model.
+This file defines a similar setup of "ResNet-18" model.
 
 ## run.sh
 This file contains an example of how to run the cnn_model.py
