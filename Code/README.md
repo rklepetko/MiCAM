@@ -17,16 +17,16 @@ It contains 10 files:
 This documentation file.
 
 ## MNIST_to_tfrec.py
-This is a sample code that takes the MNIST dats and converts them into tensorflow records (TFRecords) for the CNN model.
+This is a sample code that takes the MNIST data, upsamples and converts them into tensorflow records (TFRecords) for the CNN model.
 
 ## model_vis.py
 This is the main module that builds and trains the CNN model and generates the CAM images.
 
 ## vis_utils.py
-This modified python module integrates the CAM images into the model layout diagram generator.
+This modified python tensorflow module  that integrates the CAM images into the model layout diagram generator.
 
 ## input.py
-The input module is responsible for fetching data to be used by the cnn model.  It uses tensorflow recordsas the source of data files and returns 3 datasets:  train (60% of files), validate (20% of files) and test (20% of files) datasets.
+The input module is responsible for fetching data to be used by the cnn model.  It uses tensorflow record files as the data source and returns 3 datasets:  train (60% of files), validate (20% of files) and test (20% of files) datasets.
 
 ## flags.py
 This file contains the flags/arguments needed to run the cnn_model.py
@@ -47,6 +47,6 @@ This file contains an example of how to run the cnn_model.py
 Change the required arguments and run: ```./run.sh```
 It is recommended to install tensorflow in a python virtualenv and run it inside a screen session.
 
-The MiCAM plots are placed within the MCAM folder of the log file specified within the flag or input parameters.
+The MiCAM plots are placed within the MCAM folder of the log directory specified within the flag or input parameters.
 
-To use [tensorboard](https://www.tensorflow.org/guide/summaries_and_tensorboard) for graph visualization of the trained model, run ```python -m tensorboard.main --logdir=path_to_log_folder``` inside a screen session. By default tensorboard should be listening to port `6006`. If the training is running over an ssh server, redirect a local port to the `6006` port: ```ssh -i key_path -L local-port:127.0.0.1:6006 user@server-ip ```
+To use [tensorboard](https://www.tensorflow.org/guide/summaries_and_tensorboard) for graph visualizations of the trained model, details on accuracy during training, and PR curves.   Run ```python -m tensorboard.main --logdir=path_to_log_folder``` inside a screen session. By default tensorboard should be listening to port `6006`.  If the training is running over an ssh server, redirect a local port to the `6006` port: ```ssh -i key_path -L local-port:127.0.0.1:6006 user@server-ip ```.
