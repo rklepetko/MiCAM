@@ -339,7 +339,7 @@ def plot_maps(model,features,label,pred,idx,cnn_name):
         plt.close('all')
         print(filename)
     # plot cam plots in vertical line, set to true
-    if (false): 
+    if (False): 
         joined = f.FLAGS.log_dir + "/MCAM/"+cnn_name+"_MCAM_sample-"+str(idx)+"_label-"+lab+"_pred-"+prd+".png"
         merge_vertical_image(filenames,joined)
     
