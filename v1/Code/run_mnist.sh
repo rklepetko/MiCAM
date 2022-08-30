@@ -8,7 +8,7 @@ time python -u model_vis.py\
  --width 75\
  --batch_size 64\
  --num_epochs 3\
- --data_dir ../MNIST/75x75/tfrecords\
+ --data_dir /MNIST/75x75/tfrecords\
  --learning_rate 1e-5\
- --log_dir ../log/MNIST/lenet5/ | tee ../Data1/log_run/MNIST/lenet5.out
+ --log_dir /log/MNIST/lenet5/ | tee /log_run/MNIST/lenet5.out
 
