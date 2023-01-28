@@ -1,7 +1,7 @@
 # MiCAM Generator for Convolutional Neural Networks (CNN)
 
 This location holds the code and plot example for the CNN MiCAM visualization tool.
-There are two folders, one that contains the plots and code for version-1, and the other is for version-2.
+There where two folders, one that contains the plots and code for version-1, and the remaining is for version-2.
 
 Version-1 was a proof of concept and protoype code, and is included here since it was submitted to academic publications.
 
